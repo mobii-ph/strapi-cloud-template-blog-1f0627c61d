@@ -3,9 +3,10 @@ module.exports = [
   {
     name: "strapi::cors",
     config: {
-      origin: ["http://localhost:3000", "https://futr.gg", "https://futr-web-frontend-env-staging-mobii-ph.vercel.app/"],
+      origin: ["http://localhost:3000", "https://futr.gg", "https://futr-web-frontend-env-staging-mobii-ph.vercel.app"],
       methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
-      headers: ["Content-Type", "Authorization", "Origin", "Accept"],
+      enabled: true,
+      header: '*',
       keepHeaderOnError: true,
     },
   },
